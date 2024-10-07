@@ -1,4 +1,5 @@
 public class Alumnos { 
+
     private String matricula;
     private String nombre;
     private double estructura;
@@ -61,7 +62,7 @@ public class Alumnos {
 
     @Override
     public String toString() {
-        return "Alumnos [matricula=" + matricula + ", nombre=" + nombre + ", promedio=" + promedio + "]";
+        return "lumnos [matricula=" + matricula + ", nombre=" + nombre + ", promedio=" + promedio + "]";
     }
     
 }

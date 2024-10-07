@@ -1,4 +1,5 @@
 public class Alumnos { 
+
     private String matricula;
     private String nombre;
     private double estructura;
