@@ -36,14 +36,6 @@ public class PromedioGrupo{
             alumnos[i] = a;
         }
      }
-     public static void imprimirAlumnos(){
-        System.out.println("Contenido del arreglo alumnos: ");
-        for(Alumnos a : alumnos){
-            System.out.println("---------------------------------");
-            System.out.println("Información del alumnos: ");
-            System.out.println(a.toString());
-    }
-     }
     public static void main(String[] args) throws IOException {
         int n; //tamaño del grupo
          double promedio; // el promedio del grupo
@@ -60,7 +52,7 @@ public class PromedioGrupo{
         //Introducir información de los alumnos
         leerAlumnos();
        //Montrar la información 
-       imprimirAlumnos();
+       System.out.println(alumnos);
 
 
         //Obtener el promedio

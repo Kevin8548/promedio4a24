@@ -1,10 +1,10 @@
 public class Alumno {
     private String matricula;
     private String nombre;
-    private double estructuras;
-    private double ingles;
-    private double iot;
-    private double promedio;
+    private double Estructuras;
+    private double Ingles;
+    private double Iot;
+    private double Promedio;
 
     // constructor
     public Alumno(String m, String n){
@@ -29,35 +29,35 @@ public class Alumno {
     }
 
     public double getEstructuras() {
-        return estructuras;
+        return Estructuras;
     }
 
     public void setEstructuras(double estructuras) {
-        this.estructuras = estructuras;
+        this.Estructuras = estructuras;
     }
 
     public double getIngles() {
-        return ingles;
+        return Ingles;
     }
 
     public void setIngles(double ingles) {
-        this.ingles = ingles;
+        this.Ingles = ingles;
     }
 
     public double getIot() {
-        return iot;
+        return Iot;
     }
 
     public void setIot(double iot) {
-        this.iot = iot;
+        this.Iot = iot;
     }
 
     public double getPromedio() {
-        return promedio;
+        return Promedio;
     }
 
-    public void setPromedio(double promedio) {
-        this.promedio = (this.estructuras + this.ingles + this.iot)/3;
+    public void setPromedio() {
+        this.Promedio = (this.Estructuras + this.Ingles + this.Iot)/3;
     }
 
     @Override

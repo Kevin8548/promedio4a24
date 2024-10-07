@@ -7,7 +7,7 @@ public class PromedioGrupo{
     public static BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
     public static String entrada; 
     //Declaración de un arreglo de tipo TDA
-     public static Alumnos[] alumnos;
+     public static Alumno[] alumnos;
 
      public static void leerAlumnos() throws IOException{
         String matricula, nombre;
@@ -20,33 +20,31 @@ public class PromedioGrupo{
             System.out.println("Escribe el nombre: ");
             entrada = bufer.readLine();
             nombre = entrada;
-            //Creación de un objeto Alumno (POJO)
-            Alumnos a = new Alumnos(matricula, nombre);
-            System.out.println("Escribe calificación de estructuras: ");
+            // creacion de un objeto alumno (pojo/pollo)
+            Alumno a = new Alumno(matricula, nombre);
+            System.out.println("Escribe calificaciones de estructuras: ");
             entrada = bufer.readLine();
-            a.setEstructura(Double.parseDouble(entrada));
-            System.out.println("Escribe calificación de inglés: ");
+            a.setEstructuras(Double.parseDouble(entrada));
+            System.out.println("Escribe calificacion de ingles: ");
             entrada = bufer.readLine();
             a.setIngles(Double.parseDouble(entrada));
-            System.out.println("Escribe calificación de iot: ");
+            System.out.println("Escribe calificacion de IOT: ");
             entrada = bufer.readLine();
             a.setIot(Double.parseDouble(entrada));
             a.setPromedio();
-            //Agregando un alumno al arreglo
-            alumnos[i] = a;
+            // Agregando un alumno al arreglo
+            alumnos [i] = a;
+
         }
-     }
-     public static void imprimirAlumnos(){
-        System.out.println("Contenido del arreglo alumnos: ");
-        for(Alumnos a : alumnos){
-            System.out.println("---------------------------------");
-            System.out.println("Información del alumnos: ");
-            System.out.println(a.toString());
-    }
      }
     public static void main(String[] args) throws IOException {
         int n; //tamaño del grupo
-         double promedio; // el promedio del grupo
+       
+        // double[] calificaciones; //Calificaciones de cada alumno
+        // double suma = 0; // para sumar calificaciones
+        // double promedio; // el promedio del grupo
+
+       
 
         System.out.println("Programa que calcula el promedio de un grupo");
         System.out.println("----------------------------------------------");
@@ -56,13 +54,16 @@ public class PromedioGrupo{
         n = Integer.parseInt(entrada); //Conversion de string a int
 
         //Contruir el arreglo alumnos
-        alumnos = new Alumnos[n];
-        //Introducir información de los alumnos
-        leerAlumnos();
-       //Montrar la información 
-       imprimirAlumnos();
+        alumnos = new Alumno[n];
 
-
+        // calificaciones = new double[n]; //Construccion del arreglo
+        // Pedir calificacion y acumularla
+        // for( int i = 0;i < calificaciones.length;i++){
+        // //     System.out.println("Escribe la calificacion del estudiante[ "+ (i+1)+ "]");
+        // //     entrada = bufer.readLine();
+        // //     calificaciones [i] = Double.parseDouble(entrada);
+        // //     suma += calificaciones[i];
+        // // }
         //Obtener el promedio
         // promedio = suma /n;
         // System.out.println("----------------------------------------");
