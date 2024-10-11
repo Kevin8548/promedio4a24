@@ -12,10 +12,6 @@ class Alumnos {
         this.nombre = nombre;
     }
 
-    public Alumnos(){
-        
-    }
-
     public void setEstructura(double estructura) {
         this.estructura = estructura;
     }

@@ -1,4 +1,4 @@
-public class Alumnos {
+class Alumnos {
     private String matricula;
     private String nombre;
     private double estructura;
@@ -24,7 +24,19 @@ public class Alumnos {
     }
 
     public void setPromedio() {
-        this.promedio = (estructura + ingles + iot) / 3;
+        this.promedio = (estructura + ingles + iot) / 3;  // Calcular promedio general
+    }
+
+    public double getEstructura() {
+        return estructura;
+    }
+
+    public double getIngles() {
+        return ingles;
+    }
+
+    public double getIot() {
+        return iot;
     }
 
     public double getPromedio() {
@@ -33,6 +45,6 @@ public class Alumnos {
 
     @Override
     public String toString() {
-        return "Matricula: " + matricula + "\nNombre: " + nombre + "\nPromedio: " + promedio;
+        return "Matricula: " + matricula + ", Nombre: " + nombre + ", Promedio: " + promedio;
     }
 }

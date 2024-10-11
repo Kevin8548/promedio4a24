@@ -7,13 +7,8 @@ class Alumnos {
     private double promedio;
 
     public Alumnos(String matricula, String nombre) {
-        //inicializar el nombre y matrivula del alumno
         this.matricula = matricula;
         this.nombre = nombre;
-    }
-
-    public Alumnos(){
-        
     }
 
     public void setEstructura(double estructura) {
